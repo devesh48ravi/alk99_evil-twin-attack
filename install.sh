@@ -9,7 +9,8 @@ printf " 1)ARM \n 2)ARM_V7 \n 3) x86 \n " ;
 read input ;
 if  [[ $input == "1" ]] ; then { cd iptablesall/armeabi/ ; cp iptables /data/data/com.termux/files/usr/bin/   ; cd .. ; cd .. ; 
 }
-elif [[ $input == "2" ]] ; then { cd iptablesall/armv7/ ; cp iptables /data/data/com.termux/files/usr/bin/ ;
+elif [[ $input == "2" ]] ; then { cd iptablesall/armv7/ ; cp iptables /data/data/com.termux/files/usr/bin/ ;  cd .. ; cd .. ; 
+}
 }
 fi
 echo "iptables copy done ok!" && sleep 2
